@@ -1,0 +1,18 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1> Bienvenue sur Odinbook, <%= @user.first_name %> !</h1>
+    <p>
+      Vous vous etes inscrits avec succes sur notre reseau social.
+      Votre nom d'utilisateur est votre email : <%= @user.email %>
+    </p>
+    <p>
+      pour vous connecter des maintenant, cliquez simplement sur ce lien :<br>
+      <%= link_to 'Se connecter a Odinbook', @url %>
+    </p>
+    <p> A tres vite sur la platforme !</p>
+  </body>
+</html>
